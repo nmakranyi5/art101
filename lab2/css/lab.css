@@ -41,3 +41,10 @@ p {
     font-style: italic;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+body {
+    background-image: url("../img/background1.jpg");
+    background-color: aqua;
+    background-size: cover;
+    opacity: 0.9;
+}
