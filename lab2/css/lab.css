@@ -9,16 +9,35 @@
   }
 
 .photo {
-    margin-left: auto;
+    margin-left: 135px;
     margin-right: auto;
     padding: 10px;
     max-width: 300px;
     max-height: 300px;
     text-align:center;
-    display:block;
 }
 
-h1{
+h1 {
     color: blue;
     font-size: xx-large;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    text-indent: 20px;
+}
+
+#info {
+    border-style: dotted;
+    background-color: beige;
+    padding: 10px;
+}
+
+#photos {
+    border-style: dashed;
+    background-color: blanchedalmond;
+    padding: 10px;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
