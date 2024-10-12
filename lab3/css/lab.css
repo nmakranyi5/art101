@@ -7,3 +7,9 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+#photo {
+  max-width: 700px;
+  max-height: 700px;
+  display: block;
+}

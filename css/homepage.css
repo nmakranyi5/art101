@@ -4,3 +4,40 @@
   margin: 10px;
   max-width: 500px;
 }
+
+#my-portrait {
+  width: 250px;
+  height: 250px;
+  float: right;
+  margin: 20px;
+  border: 5px solid #C0C0C0;
+}
+
+body {
+  background-image: url("../img/background2.jpg");
+  background-color: aqua;
+  background-size: cover;
+  opacity: 0.95;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #A3C9A8;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#links{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
