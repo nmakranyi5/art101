@@ -13,3 +13,11 @@
   max-height: 700px;
   display: block;
 }
+
+body {
+  background-image: url("../img/background3.jpg");
+  background-color: aqua;
+  background-size: cover;
+  opacity: 0.95;
+  margin-bottom: 20px;
+}
