@@ -7,3 +7,17 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+body {
+    background-image: url("../img/background4.jpg");
+    background-color: grey;
+    background-size: cover;
+    opacity: 0.95;
+    margin-bottom: 20px;
+  }
+
+#photo {
+    max-width: 700px;
+    max-height: 700px;
+    display: block;
+}
