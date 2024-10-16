@@ -21,3 +21,7 @@ body {
     max-height: 700px;
     display: block;
 }
+
+code {
+  white-space: pre-wrap;
+}
