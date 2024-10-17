@@ -7,3 +7,38 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+body {
+    background-image: url("../img/background5.jpg");
+    background-color: grey;
+    background-size: cover;
+    opacity: 0.95;
+    margin-bottom: 20px;
+  }
+
+#photo {
+    width: 450px;
+    height: 400px;
+    display: block;
+}
+
+#car
+{
+  width: 400px;
+  height: 250px;
+  float: right;
+  margin: 20px;
+  border: 5px solid #C0C0C0;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
