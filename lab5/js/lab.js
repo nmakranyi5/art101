@@ -11,14 +11,15 @@
 
 function main() {
   // declare variables
-  make = "Lamborghini";
-  model = "Aventador";
-  color = "Blue";
-  year = "2022";
-  ownIt = false;
+  let make = "Lamborghini";
+  let model = "Aventador";
+  let color = "Blue";
+  let year = "2022";
+  let ownIt = false;
+  let names = ["Reuben", "Ajit", "Philip"];
 
   // calculate the age
-  age = 2024 - year;
+  let age = 2024 - year;
 
   //display variable values
   document.writeln("Make: " + make + "<br>");
@@ -34,7 +35,7 @@ function main() {
   
   //for loop + conditionals
   document.writeln("Loop counting up to 10.<br>");
-  for(index = 0; index <= 10; index+=1)
+  for(let index = 0; index <= 10; index+=1)
   {
     if(index > 9)
     {
@@ -46,6 +47,12 @@ function main() {
     }
   }
   document.writeln("<br>");
+
+  //looping through array and printing names
+  for(let index = 0; index < names.length; index+=1)
+  {
+    document.writeln(names[index] + ".<br>");
+  }
 }
 
 // let's get this party started
