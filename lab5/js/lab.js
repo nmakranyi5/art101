@@ -48,6 +48,7 @@ function main() {
   }
   document.writeln("<br>");
 
+  document.writeln("Looping through an array and printing names.<br>");
   //looping through array and printing names
   for(let index = 0; index < names.length; index+=1)
   {
