@@ -16,7 +16,7 @@ function main() {
   let color = "Blue";
   let year = "2022";
   let ownIt = false;
-  let names = ["Reuben", "Ajit", "Philip"];
+  let names = ["Nikolas", "Carlos", "Reuben", "Isaiah", "Philip"];
 
   // calculate the age
   let age = 2024 - year;
