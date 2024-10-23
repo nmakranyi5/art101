@@ -22,6 +22,14 @@ body {
     display: block;
 }
 
+#cat {
+    width: 450px;
+    height: 400px;
+    display: block;
+    float: right;
+    padding-right: 10px;
+}
+
 #car
 {
   width: 400px;
