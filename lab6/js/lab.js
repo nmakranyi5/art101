@@ -44,6 +44,7 @@ function main() {
   document.writeln("Printing custom object called myPet: <br>");
   document.writeln("My Pet: <pre>", JSON.stringify(myPet, null, '\t'), "</pre>");
   document.writeln("<br>");
+  document.writeln("Sorted array: " + myTransport.sort() + "<br>");
 }
 
 // let's get this party started
