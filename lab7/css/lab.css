@@ -57,6 +57,25 @@ h2{
   background-color: #ADD8E6;
 }
 
-#nametag{
-  background-color: grey;
+#nametag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#nametagText {
+  position: absolute;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  top: 40%;
+}
+
+#name {
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
 }
