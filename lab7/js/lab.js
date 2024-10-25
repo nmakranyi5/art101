@@ -73,7 +73,9 @@ function anagram(name)
 }
 
 function main() {
+  // getting user input
   let name = window.prompt("Enter your name here:");
+  // printing stuff and calling functions
   document.writeln("Your name: " + name + "<br>");
   let sortedNameNoS = sortNameNoSpace(name);
   document.writeln("Your sorted name without spaces: " + sortedNameNoS + "<br>");
@@ -83,6 +85,7 @@ function main() {
   document.writeln("Your reversed name: " + revName + "<br>");
   let anagramName = anagram(name);
   document.writeln("Your name as an anagram: " + anagramName + "<br>");
+  // putting anagram on name tag div
   document.getElementById("nametagText").innerHTML = anagramName;
 }
 
