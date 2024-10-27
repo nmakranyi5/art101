@@ -36,6 +36,7 @@ function main() {
   var results = nums.map(function(x){
     return x * 2;
   })
+  
   // print array elements * 2
   console.log("Nums * 2: ", results);
 
