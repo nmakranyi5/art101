@@ -29,8 +29,8 @@ function main() {
   }
 
   // calling square root function and printing output to console
-  var results = nums.map(squareRoot);
-  console.log("Squareroot of nums: ", results);
+  var sqResults = nums.map(squareRoot);
+  console.log("Squareroot of nums: ", sqResults);
 
   // anon function with callback that multiplies each array element by 2
   var results = nums.map(function(x){
@@ -38,6 +38,16 @@ function main() {
   })
   // print array elements * 2
   console.log("Nums * 2: ", results);
+
+  // map results data
+  var mapResults = results;
+
+  // using jQuery to select the element by its ID and set the HTML content
+  $("#script-output").html(
+    "Original nums array: [" + nums.join(", ") + "]<br>" +
+    "My array after square root taken for each element: [" + sqResults.join(", ") + "]<br>" +
+    "My array after being multiplied by 2: [" + mapResults.join(", ") + "]"
+  );
 }
 
 // let's get this party started
