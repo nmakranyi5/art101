@@ -1,0 +1,81 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #ddd8c48b;
+  }
+
+body {
+    background-image: url("../img/background7.jpg");
+    background-color: #ADD8E6;
+    background-size: cover;
+    opacity: 0.95;
+    margin-bottom: 20px;
+  }
+
+#photo {
+    width: 450px;
+    height: 400px;
+    display: block;
+}
+
+#cat {
+    width: 350px;
+    height: 400px;
+    display: block;
+    float: right;
+    border: 5px solid #C0C0C0;
+}
+
+#car
+{
+  width: 400px;
+  height: 250px;
+  float: right;
+  border: 5px solid #C0C0C0;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #888;
+  background-color: #ADD8E6;
+}
+
+#nametag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#nametagText {
+  position: absolute;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  top: 40%;
+}
+
+#name {
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+}
