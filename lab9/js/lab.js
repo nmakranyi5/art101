@@ -34,6 +34,7 @@ function main() {
     $("#reflection").toggleClass("special");
   });
   */
+ 
   // new code
   // add button to all three sections
   $(".special_section").append("<button class='special-sections-button'>Make Special</button>");
