@@ -10,6 +10,7 @@
 // Functions
 
 function main() {
+  /* old code
   // add button to challenge section
   $("#challenge").append("<button id='button-challenge'>Make Special</button>");
   // add button to problems section
@@ -32,15 +33,15 @@ function main() {
     // now add (or subtract) the "special" class to the section
     $("#reflection").toggleClass("special");
   });
-  /*
+  */
+  // new code
   // add button to all three sections
-  $(".special_section").append("<button id='special-sections-button'>Make Special</button>");
-  // add a click listener to the challenge button
-  $("#special-sections-button").click(function(){
+  $(".special_section").append("<button class='special-sections-button'>Make Special</button>");
+  // add a click listener to the button
+  $(".special-sections-button").click(function(){
     // now add (or subtract) the "special" class to the section
     $(this).parent().toggleClass("special");
   });
-  */
 }
 
 // let's get this party started
