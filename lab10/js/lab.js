@@ -21,14 +21,35 @@ function generateRandomText()
   return text.slice(randStart, randStart + randLen);
 }
 
+let className = "right"
+
 function main() 
 {
   // click listener for button
   $("#make-convo").click(function(){
     // get new fake dialogue
-    const newText = generateRandomText();
+    let newText = generateRandomText();
+    // get user input and trim it
+    let userInput = $("#message").val().trim();
+    // if user input is valid, set it to newText
+    if(userInput)
+    {
+      newText = userInput;
+    }
+    // switching class for sides
+    if(className === "right")
+    {
+      className = "left";
+    }
+    else
+    {
+      className = "right";
+    }
+
     // append a new div to our output div
-    $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+    $("#output").append('<div class="text ' + className + '"><p>' + newText + '</p></div>');
+    // clearing the input
+    $("#message").val('');
   });
 }
 
