@@ -41,3 +41,27 @@ h2{
   border: solid 1px #888;
   background-color: #696a6c;
 }
+
+.special {
+  color: rgb(20, 7, 93);
+  font-weight: bold;
+  font-size: larger;
+  background-color: rgb(198, 179, 149);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.special_section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+}
+
+.glitch {
+  color: rgb(155, 14, 14);
+  background-image: url("../img/unknown.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-color: transparent;
+  opacity: 0%;
+}

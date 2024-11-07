@@ -44,13 +44,43 @@ function main()
   $("#submit").click(function(){
     // get value of input field
     const userName = $("#user-name").val();
+    // get value of input field
+    const petName = $("#pet-name").val();
+    // get value of input field
+    const movieName = $("#movie-name").val();
     // now let's sort it
     let userNameSorted = sortString(userName);
     // anagram
-    let anagramName = anagram(userName);
+    let anagramName;
+    if(userName)
+    {
+      anagramName = anagram(userName);
+    }
     // append a new divs to our output div
     $("#output").html('<div class="text"><p>' + "Sorted Name: " + userNameSorted + '</p></div>' +
-      '<div class="text"><p>' + "Anagram Name: " + anagramName + '</p></div>');
+      '<div class="text"><p>' + "Anagram Name: " + anagramName + '</p></div>' + 
+      '<div class="text"><p>' + "Pet Name: " + petName + '</p></div>' +
+      '<div class="text"><p>' + "Movie Name: " + movieName + '</p></div>' );
+  });
+
+  $("#change-color").click(function(){
+    // now add (or subtract) the "special" class to the section
+    $(this).parent().toggleClass("special");
+  });
+
+  $("#secret").click(function(){
+    setTimeout(function() {
+      $("body").toggleClass("glitch");
+    }, 4000);
+    setTimeout(function() {
+      $(".minor-section").toggleClass("glitch");
+    }, 2100);
+    setTimeout(function() {
+      $(".minor-section").html('<div class="text"><p>' + "FREE ME" + '</p></div>' );
+    }, 500);
+    setTimeout(function() {
+      $("h1").html('<div class="text"><p>' + "FREE ME" + '</p></div>' );
+    }, 1000);
   });
 }
 
