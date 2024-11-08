@@ -66,6 +66,10 @@ h2{
 }
 
 .glitch2 {
+  color: rgb(155, 14, 14); 
+}
+
+.glitch3 {
   color: rgb(155, 14, 14);
   background-image: url("../img/unknown2.jpg");
   background-size: cover;

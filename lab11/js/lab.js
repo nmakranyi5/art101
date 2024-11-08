@@ -40,7 +40,11 @@ function anagram(name)
 
 function main() 
 {
-  const minor_section = $(".minor-section").html();
+  const challenges = $("#challenge").html();
+  const problems = $("#problems").html();
+  const reflections = $("#reflection").html();
+  const output = $("#output").html();
+  const links = $("#links").html();
   const body = $("body").attr("class");
   const h1 = $("h1").html();
   // click listener for button
@@ -60,7 +64,7 @@ function main()
       anagramName = anagram(userName);
     }
     // append a new divs to our output div
-    $("#output").html('<div class="text"><p>' + "Sorted Name: " + userNameSorted + '</p></div>' +
+    $("#results").html('<div class="text"><p>' + "Sorted Name: " + userNameSorted + '</p></div>' +
       '<div class="text"><p>' + "Anagram Name: " + anagramName + '</p></div>' + 
       '<div class="text"><p>' + "Pet Name: " + petName + '</p></div>' +
       '<div class="text"><p>' + "Movie Name: " + movieName + '</p></div>' );
@@ -77,6 +81,7 @@ function main()
     }, 4000);
     setTimeout(function() {
       $(".minor-section").toggleClass("glitch2");
+      $(".minor-section").toggleClass("glitch3");
     }, 100);
     setTimeout(function() {
       $(".minor-section").html('<div class="text"><p>' + "FREE ME" + '</p></div>' );
@@ -88,10 +93,15 @@ function main()
       $("body").removeClass("glitch");
     }, 5000);
     setTimeout(function() {
-      $(".minor-section").html(minor_section);
+      $("#challenge").html(challenges);
+      $("#problems").html(problems);
+      $("#reflection").html(reflections);
+      $("#output").html(output);
+      $("#links").html(links);
       $("h1").html(h1);
       $("body").attr("class", body);
       $(".minor-section").removeClass("glitch2");
+      $(".minor-section").removeClass("glitch3");
       $("h1").removeClass("glitch2");
     }, 8000);
   });
@@ -102,7 +112,7 @@ function main()
     setTimeout(function() {
       $(".minor-section").removeClass("glitch2");
       $("h1").removeClass("glitch2");
-    }, 100);
+    }, 500);
   }, 10000);
 
 }
