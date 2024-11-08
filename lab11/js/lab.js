@@ -112,7 +112,7 @@ function main()
     setTimeout(function() {
       $(".minor-section").removeClass("glitch2");
       $("h1").removeClass("glitch2");
-    }, 500);
+    }, 3000);
   }, 10000);
 
 }
