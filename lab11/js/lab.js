@@ -40,6 +40,9 @@ function anagram(name)
 
 function main() 
 {
+  const minor_section = $(".minor-section").html();
+  const body = $("body").attr("class");
+  const h1 = $("h1").html();
   // click listener for button
   $("#submit").click(function(){
     // get value of input field
@@ -73,15 +76,35 @@ function main()
       $("body").toggleClass("glitch");
     }, 4000);
     setTimeout(function() {
-      $(".minor-section").toggleClass("glitch");
-    }, 2100);
+      $(".minor-section").toggleClass("glitch2");
+    }, 100);
     setTimeout(function() {
       $(".minor-section").html('<div class="text"><p>' + "FREE ME" + '</p></div>' );
     }, 500);
     setTimeout(function() {
       $("h1").html('<div class="text"><p>' + "FREE ME" + '</p></div>' );
     }, 1000);
+    setTimeout(function() {
+      $("body").removeClass("glitch");
+    }, 5000);
+    setTimeout(function() {
+      $(".minor-section").html(minor_section);
+      $("h1").html(h1);
+      $("body").attr("class", body);
+      $(".minor-section").removeClass("glitch2");
+      $("h1").removeClass("glitch2");
+    }, 8000);
   });
+
+  setInterval(function() {
+    $(".minor-section").addClass("glitch2");
+    $("h1").addClass("glitch2");
+    setTimeout(function() {
+      $(".minor-section").removeClass("glitch2");
+      $("h1").removeClass("glitch2");
+    }, 100);
+  }, 10000);
+
 }
 
 // let's get this party started

@@ -59,9 +59,16 @@ h2{
 .glitch {
   color: rgb(155, 14, 14);
   background-image: url("../img/unknown.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center -100px; 
   background-color: transparent;
   opacity: 0%;
+}
+
+.glitch2 {
+  color: rgb(155, 14, 14);
+  background-image: url("../img/unknown2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -625px; 
 }
