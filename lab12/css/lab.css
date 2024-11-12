@@ -1,0 +1,78 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #ddd8c48b;
+}
+
+body {
+  background-image: url("../img/background11.jpg");
+  opacity: 0.95;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-color: lightblue;
+}
+
+#photo {
+  max-width: 600px;
+  max-height: 600px;
+  display: block;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #888;
+  background-color: #696a6c;
+}
+
+.special {
+  color: rgb(20, 7, 93);
+  font-weight: bold;
+  font-size: larger;
+  background-color: rgb(198, 179, 149);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.special_section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+}
+
+.glitch {
+  color: rgb(155, 14, 14);
+  background-image: url("../img/unknown.jpg");
+  background-repeat: no-repeat;
+  background-position: center -100px; 
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.glitch2 {
+  color: rgb(155, 14, 14); 
+}
+
+.glitch3 {
+  color: rgb(155, 14, 14);
+  background-image: url("../img/unknown2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -625px; 
+}
