@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url("../img/background11.jpg");
+  background-image: url("../img/background12.jpg");
   opacity: 0.95;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,37 +42,9 @@ h2{
   background-color: #696a6c;
 }
 
-.special {
-  color: rgb(20, 7, 93);
-  font-weight: bold;
-  font-size: larger;
-  background-color: rgb(198, 179, 149);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.special_section {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: solid 1px #888;
-}
-
-.glitch {
-  color: rgb(155, 14, 14);
-  background-image: url("../img/unknown.jpg");
-  background-repeat: no-repeat;
-  background-position: center -100px; 
-  background-color: transparent;
-  opacity: 0%;
-}
-
-.glitch2 {
-  color: rgb(155, 14, 14); 
-}
-
-.glitch3 {
-  color: rgb(155, 14, 14);
-  background-image: url("../img/unknown2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center -625px; 
+#input {
+  width: auto;
+  padding: 10px 20px;
+  white-space: nowrap;
+  overflow: visible;
 }
