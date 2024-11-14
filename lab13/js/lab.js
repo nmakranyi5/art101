@@ -58,14 +58,17 @@ function main()
   myButton.addEventListener("click", function() {
     let start = 1;
     let end = document.getElementById("num").value;
+
     let factor1 = document.getElementById("f1").value;
     let factor2 = document.getElementById("f2").value;
     let factor3 = document.getElementById("f3").value;
     let factor4 = document.getElementById("f4").value;
+
     let factor1text = document.getElementById("f1text").value;
     let factor2text = document.getElementById("f2text").value;
     let factor3text = document.getElementById("f3text").value;
     let factor4text = document.getElementById("f4text").value;
+
     if (factor1 !== "")
     {
       factors[0] = factor1;
@@ -98,6 +101,7 @@ function main()
     {
       text[3] = factor4text;
     }
+    
     let outputString = fizzBuzz(start, end);
     $("#output").html(outputString);
   })
