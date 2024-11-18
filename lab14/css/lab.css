@@ -1,0 +1,66 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #ddd8c48b;
+}
+
+body {
+  background-image: url("../img/background13.jpg");
+  opacity: 0.95;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-color: lightblue;
+}
+
+#photo {
+  padding-top: 10px;
+  max-width: 700px;
+  max-height: 700px;
+  display: block;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #888;
+  background-color: #696a6c;
+}
+
+#input {
+  width: auto;
+  padding: 10px 20px;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+#output {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#output div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
