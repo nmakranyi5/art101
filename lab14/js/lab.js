@@ -7,13 +7,29 @@
  **/
 
 // Constants
+const val = Math.floor(Math.random() * 10) + 1;
 // Functions
 function main() 
 {
-    let num = 1;
-    num += 10 + 1238123 * 50;
-    num = num + num;
-    return num;
+    let myButton = document.getElementById("button");
+    myButton.addEventListener("click", function() {
+        let guess = document.getElementById("guess").value;
+        if(guess == val)
+        {
+            $("#guesses").html("You got it! Congrats!");
+        }
+        else
+        {
+            if(guess < val)
+            {
+                $("#guesses").html("Try again! Too low!");
+            }
+            else
+            {
+                $("#guesses").html("Try again! Too high!");
+            }
+        }
+  })
 }
 
 // let's get this party started
