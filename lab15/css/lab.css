@@ -17,7 +17,7 @@ body {
   background-color: lightblue;
 }
 
-#photo {
+.photo {
   padding-top: 10px;
   max-width: 700px;
   max-height: 700px;
@@ -48,4 +48,12 @@ h2{
   padding: 10px 20px;
   white-space: nowrap;
   overflow: visible;
+}
+
+#nasaPhoto
+{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #ddd8c48b;
 }
