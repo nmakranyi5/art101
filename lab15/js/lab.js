@@ -50,11 +50,25 @@ function main()
         // all the action goes in here
         success: function(data) {
             // do stuff
-            const imageUrl = data.hdurl;
+            const mediaType = data.media_type; // checking the media type
             const explanation = data.explanation;
-            $("#nasaPhoto").html(`
-                <img src="${imageUrl}" style="max-width: 700px; height: 600px;"/>
-            `);
+
+            if (mediaType === "image") 
+            {
+                const imageUrl = data.hdurl; // get the image url and display it
+                $("#nasaPhoto").html(`
+                    <img src="${imageUrl}" style="max-width: 700px; height: auto;" alt="NASA Photo"/>
+                `);
+            } 
+            else if (mediaType === "video") 
+            {
+                const videoUrl = data.url; // get the video url and display it
+                $("#nasaPhoto").html(`
+                    <iframe src="${videoUrl}" style="width: 700px; height: 400px;" frameborder="0" allowfullscreen>
+                    </iframe>
+                `);
+            }
+            // displaying the explanation
             $("#photoText").html(`
                 <p>${explanation}</p>
             `);
