@@ -13,7 +13,7 @@ function main()
     // Using the core $.ajax() method
     $.ajax({
         // The URL for the request (from the api docs)
-        url: "https://xkcd.com/info.0.json",
+        url: "https://cors-anywhere.herokuapp.com/https://xkcd.com/info.0.json",
         // The data to send (will be converted to a query string)
         data: { 
                 // here is where any data required by the api 
@@ -28,10 +28,10 @@ function main()
         success: function(data) {
             // do stuff
             let comicObj = data;
-            $("#output").append("<h3>" + comicObj.title);
-            $("#output").append("<img src='" + comicObj.img + "' alt='" + comicObj.alt + "' title='" + comicObj.alt + "'/>");
-            $("#output").append("<p>" + comicObj.alt);
-            console.log(comicObj);
+            $("#output").append(`<h3>${comicObj.title}</h3>`);
+            $("#output").append(`<img src="${comicObj.img}" alt="${comicObj.alt}" title="${comicObj.alt}"/>`);
+            $("#output").append(`<p>${comicObj.alt}</p>`);
+            console.log(data);
         },
         // What we do if the api call fails
         error: function (jqXHR, textStatus, errorThrown) { 
