@@ -7,13 +7,14 @@
  **/
 
 // Constants
+let comicNum = 614;
+
 // Functions
-function main() 
+function getAndPutData(comicNum)
 {
-    // Using the core $.ajax() method
     $.ajax({
         // The URL for the request (from the api docs)
-        url: "https://cors-anywhere.herokuapp.com/https://xkcd.com/info.0.json",
+        url:  `https://cors-anywhere.herokuapp.com/https://xkcd.com/${comicNum}/info.0.json`,
         // The data to send (will be converted to a query string)
         data: { 
                 // here is where any data required by the api 
@@ -28,9 +29,9 @@ function main()
         success: function(data) {
             // do stuff
             let comicObj = data;
-            $("#output").append(`<h3>${comicObj.title}</h3>`);
-            $("#output").append(`<img src="${comicObj.img}" alt="${comicObj.alt}" title="${comicObj.alt}"/>`);
-            $("#output").append(`<p>${comicObj.alt}</p>`);
+            $("#title").html(comicObj.title);
+            $("#comicPhoto").html(`<img src="${comicObj.img}" alt="${comicObj.alt}" title="${comicObj.alt}"/>`);
+            $("#photoText").html(`<p>${comicObj.alt}</p>`);
             console.log(data);
         },
         // What we do if the api call fails
@@ -39,6 +40,21 @@ function main()
             console.log("Error:", textStatus, errorThrown);
         }
     });
+}
+
+function main() 
+{
+    getAndPutData(comicNum);
+    let prev = document.getElementById("prev");
+    prev.addEventListener("click", function() {
+        comicNum -= 1;
+        getAndPutData(comicNum);
+    })
+    let next = document.getElementById("next");
+    next.addEventListener("click", function() {
+        comicNum += 1;
+        getAndPutData(comicNum);
+    })
 }
 
 // let's get this party started
