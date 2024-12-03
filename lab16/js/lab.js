@@ -14,7 +14,7 @@ function getAndPutData(comicNum)
 {
     $.ajax({
         // The URL for the request (from the api docs)
-        url:  `https://xkcd.com/${comicNum}/info.0.json`,
+        url: `https://api.allorigins.win/get?url=${encodeURIComponent(`https://xkcd.com/${comicNum}/info.0.json`)}`,
         // The data to send (will be converted to a query string)
         data: { 
                 // here is where any data required by the api 
@@ -28,7 +28,7 @@ function getAndPutData(comicNum)
         //   all the action goes in here
         success: function(data) {
             // do stuff
-            let comicObj = data;
+            let comicObj = JSON.parse(data.contents)
             $("#title").html(comicObj.title);
             $("#comicPhoto").html(`<img src="${comicObj.img}" alt="${comicObj.alt}" title="${comicObj.alt}"/>`);
             $("#photoText").html(`<p>${comicObj.alt}</p>`);
